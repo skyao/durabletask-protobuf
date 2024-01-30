@@ -604,7 +604,7 @@ service TaskHubSidecarService {
 
 message GetWorkItemsRequest {
     // revisions of workflow definition
-    revisions map<string, int> = 1;
+    map<string, int> revisions = 1;
 }
 
 message WorkItem {
