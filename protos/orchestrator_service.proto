@@ -604,8 +604,9 @@ service TaskHubSidecarService {
 }
 
 message GetWorkItemsRequest {
-    // revisions of workflow definition
-    map<string, int32> revisions = 1;
+    // versions of orchestrator(workflow definition)
+    // key is the orchestrator name, value is the sementic version of this orchestrator
+    map<string, string> versions = 1;
 }
 
 message WorkItem {
