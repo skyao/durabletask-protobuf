@@ -15,7 +15,7 @@ import "google/protobuf/empty.proto";
 message OrchestrationInstance {
     string instanceId = 1;
     google.protobuf.StringValue executionId = 2;
-    int32 revision = 3;
+    string version = 3;
 }
 
 message ActivityRequest {
@@ -253,7 +253,7 @@ message OrchestratorRequest {
     repeated HistoryEvent pastEvents = 3;
     repeated HistoryEvent newEvents = 4;
     OrchestratorEntityParameters entityParameters = 5;
-    int32 revision = 6;
+    string version = 6;
 }
 
 message OrchestratorResponse {
@@ -284,7 +284,7 @@ enum CreateOrchestrationAction {
 
 message CreateInstanceResponse {
     string instanceId = 1;
-    int32 revision = 2;
+    string version = 2;
 }
 
 message GetInstanceRequest {
