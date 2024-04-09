@@ -14,8 +14,8 @@ import "google/protobuf/empty.proto";
 
 message OrchestrationInstance {
     string instanceId = 1;
+    string instanceVersion = 3;
     google.protobuf.StringValue executionId = 2;
-    string version = 3;
 }
 
 message ActivityRequest {
