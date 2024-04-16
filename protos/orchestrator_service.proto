@@ -284,7 +284,7 @@ enum CreateOrchestrationAction {
 
 message CreateInstanceResponse {
     string instanceId = 1;
-    string instanceVersion = 2
+    string instanceVersion = 2;
 }
 
 message GetInstanceRequest {
